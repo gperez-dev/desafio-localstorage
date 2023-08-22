@@ -3,6 +3,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const getData = localStorage.getItem("inputText")
 
     if (getData) {
-        datos.textContent = `${getData}`
+        datos.textContent = `${getData}`;
+    } else {
+        datos.textContent = "No hay datos disponibles";
     }
 })
